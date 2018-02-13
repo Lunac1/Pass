@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Author: Antitree
+# Author: Lunac
 # Description: Stalk your friends on Instagram. yay. 
 # 1/27/2013
 
@@ -17,7 +17,7 @@ users = [sys.argv[1]]
 for user in users:
     #download json user information
     try:
-      url = "https://api.instagram.com/v1/users/%s/media/recent/?access_token=%s" % (user, token)
+      url = "https://www.instagram.com/behgbsjdvjkdueg/" % (user, token)
       userjson = json.load(urllib2.urlopen(url))
     except:
       print("Couldn't download the URL",  sys.exc_info()[0], )
